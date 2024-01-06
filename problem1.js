@@ -35,34 +35,70 @@
 
 // console.log(subArray);
 
+
+//Problem3: তোমাকে একটি অঋণাত্মক (০ বা এর থেকে বড়) সংখ্যা নিতে হবে এবং বলতে হবে সংখ্যাটি জোড়(even) নাকি বিজোড়(odd)।
+
+// const readline = require("readline");
+
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+
+
+// rl.question("Enter a non-negative number: ", function (userInput) {
+  
+//   let number = parseFloat(userInput);
+
+  
+//   if (isNaN(number) || number < 0) {
+//     console.log("Invalid input. Please enter a valid non-negative number.");
+//   } else {
+    
+//     if (number % 2 === 0) {
+//       console.log("The number is even.");
+//     } else {
+//       console.log("The number is odd.");
+//     }
+//   }
+
+
+//   rl.close();
+// });
+
+
+
 // Problem 4: তোমাকে একটি ইন্টিজার ভ্যেলু ইনপুট নিতে হবে এবং বলতে হবে এটি ধনাত্মক(positive) নাকি ঋণাত্মক(negative) নাকি শূণ্য(zero)।
-const readline = require("readline");
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
 
 
-rl.question("Enter an integer: ", function (userInput) {
 
-  let number = parseInt(userInput);
+// const readline = require("readline");
+
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+
+
+// rl.question("Enter an integer: ", function (userInput) {
+
+//   let number = parseInt(userInput);
 
   
-  if (isNaN(number)) {
-    console.log("Invalid input. Please enter a valid integer.");
-  } else {
+//   if (isNaN(number)) {
+//     console.log("Invalid input. Please enter a valid integer.");
+//   } else {
    
-    if (number > 0) {
-      console.log("The number is positive.");
-    } else if (number < 0) {
-      console.log("The number is negative.");
-    } else {
-      console.log("The number is zero.");
-    }
-  }
+//     if (number > 0) {
+//       console.log("The number is positive.");
+//     } else if (number < 0) {
+//       console.log("The number is negative.");
+//     } else {
+//       console.log("The number is zero.");
+//     }
+//   }
 
   
-  rl.close();
-});
+//   rl.close();
+// });
 
