@@ -34,3 +34,35 @@
 // const subArray = arr.slice(startIndex, endIndex);
 
 // console.log(subArray);
+
+// Problem 4: তোমাকে একটি ইন্টিজার ভ্যেলু ইনপুট নিতে হবে এবং বলতে হবে এটি ধনাত্মক(positive) নাকি ঋণাত্মক(negative) নাকি শূণ্য(zero)।
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+
+rl.question("Enter an integer: ", function (userInput) {
+
+  let number = parseInt(userInput);
+
+  
+  if (isNaN(number)) {
+    console.log("Invalid input. Please enter a valid integer.");
+  } else {
+   
+    if (number > 0) {
+      console.log("The number is positive.");
+    } else if (number < 0) {
+      console.log("The number is negative.");
+    } else {
+      console.log("The number is zero.");
+    }
+  }
+
+  
+  rl.close();
+});
+
