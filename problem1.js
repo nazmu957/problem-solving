@@ -36,6 +36,51 @@
 // console.log(subArray);
 
 
+// Problem 2:তোমাকে দুইটি ইন্টিজার ভ্যেলু ইনপুট নিতে হবে এবং তাদের যোগফল, বিয়োগফল, গুণফল এবং ভাগফল নীচে দেখানো ফরম্যাট এ দেখাতে হবে।
+
+
+// const readline = require("readline");
+
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+
+
+// rl.question("Enter the first integer: ", function (input1) {
+//   rl.question("Enter the second integer: ", function (input2) {
+
+//     let num1 = parseInt(input1);
+//     let num2 = parseInt(input2);
+
+    
+//     if (isNaN(num1) || isNaN(num2)) {
+//       console.log("Invalid input. Please enter valid integers.");
+//     } else {
+     
+//       let sum = num1 + num2;
+//       let difference = num1 - num2;
+//       let product = num1 * num2;
+
+
+//       let quotient = num2 !== 0 ? num1 / num2 : "Undefined (division by zero)";
+
+    
+//       console.log(`Sum: ${sum}`);
+//       console.log(`Difference: ${difference}`);
+//       console.log(`Product: ${product}`);
+//       console.log(`Quotient: ${quotient}`);
+//     }
+
+    
+//     rl.close();
+//   });
+// });
+
+
+
+
+
 //Problem3: তোমাকে একটি অঋণাত্মক (০ বা এর থেকে বড়) সংখ্যা নিতে হবে এবং বলতে হবে সংখ্যাটি জোড়(even) নাকি বিজোড়(odd)।
 
 // const readline = require("readline");
