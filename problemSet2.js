@@ -27,20 +27,45 @@
 // Create an array of objects representing books with properties like title, author, and year. Write a function that takes the array and returns a new array with only the book titles. Print the result.
 
 
-const books = [
-  { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', year: 1925 },
-  { title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
-  { title: '1984', author: 'George Orwell', year: 1949 },
-  { title: 'The Catcher in the Rye', author: 'J.D. Salinger', year: 1951 },
-  { title: 'Harry Potter and the Sorcerer\'s Stone', author: 'J.K. Rowling', year: 1997 }
-];
+// const books = [
+//   { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', year: 1925 },
+//   { title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
+//   { title: '1984', author: 'George Orwell', year: 1949 },
+//   { title: 'The Catcher in the Rye', author: 'J.D. Salinger', year: 1951 },
+//   { title: 'Harry Potter and the Sorcerer\'s Stone', author: 'J.K. Rowling', year: 1997 }
+// ];
 
 
-const extractBookTitles = (booksArray) => {
-  return booksArray.map(book => book.title);
+// const extractBookTitles = (booksArray) => {
+//   return booksArray.map(book => book.title);
+// };
+
+
+// const bookTitles = extractBookTitles(books);
+// console.log(bookTitles);
+
+// Problem 3: Write three functions: one to square a number, one to double a number, and one to add 5 to a number. Compose these functions to create a new function that squares a number, doubles the result, and then adds 5.
+
+
+const square = (num) => {
+  return num * num;
 };
 
 
-const bookTitles = extractBookTitles(books);
-console.log(bookTitles);
+const double = (num) => {
+  return num * 2;
+};
 
+
+const add5 = (num) => {
+  return num + 5;
+};
+
+
+const squareDoubleAndAdd5 = (num) => {
+  return add5(double(square(num)));
+};
+
+const originalNumber = 3;
+const result = squareDoubleAndAdd5(originalNumber);
+console.log(result);
